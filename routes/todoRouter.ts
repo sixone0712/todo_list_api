@@ -5,7 +5,7 @@ import { validateToken } from "../middleware/validateToken";
 
 const router = express.Router();
 
-router.use(validateToken);
+// router.use(validateToken);
 
 router.get("/", todoController.getTodos);
 router.post("/", todoController.createTodo);
